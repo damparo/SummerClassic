@@ -1,0 +1,151 @@
+body {
+    /* background-color: rgb(255, 255, 250); */
+    background-image: url("./images/grass4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  /* background-image: url("./images/grass4.jpg");
+  background-repeat: no-repeat;
+  background-position: center; */
+  /* margin-top: 12vh; */
+
+  /* width: 400px;
+  height: 400px;   */
+}
+
+#maintitle{
+    margin-top: 8vh;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+}
+
+#title {
+    margin-bottom: 25px;
+    margin-top: 5vh;
+
+    color: rgb(1, 3, 7);
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 35px;
+
+}
+
+input[type=text] {
+    background-color: white;
+    /* width: 150px; */
+    
+  }
+input{
+    border: none;
+}
+
+.leftpool {
+margin-right: 50px;
+margin-top: 1vh;
+}
+.rightteams {
+    margin-left: 50px;
+    align-content: center;
+    margin-top: 4vh;
+}
+
+
+@media only screen and (max-width:500px){
+    .leftpool {
+        margin-right: 10px;
+        }
+        .rightteams {
+            margin-left: 10px;
+            margin-top: 4vh;
+        }
+        
+
+
+}
+
+.zenter {
+    text-align: center;
+    color: yellow;
+    font-size:30px;
+    
+}
+
+
+#team1{
+    margin-top: 15px;
+}
+
+#team2{
+    margin-top: 10px;
+}
+#freeagent{
+    margin-top: 10px;
+}
+#yourroster {
+    margin-top: 15px;
+    color: yellow;
+}
+
+#roster-list {
+    font-size: 25px;
+    list-style: none;
+    padding-inline-start: 2px;
+    color: white;
+    font-weight: bolder;
+
+}
+
+
+ol {
+    list-style: none;
+    font-size: larger;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    
+}
+
+#teamone-list{
+    color: white;
+    
+}
+#teamtwo-list{
+color: white;
+}
+
+
+
+#addplayer {
+    color: yellow;
+  font-size: 30px;
+
+}
+
+
+#player-count{
+    color: white;
+}
+#textwhite{
+    color: white;
+}
+
+input {
+    /* width: 20vw; */
+    
+}
+
+
+
+
+#roster-creation {
+    /* margin-bottom: 20px; */
+
+}
+
+
+
