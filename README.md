@@ -22,6 +22,6 @@ Dennis Amparo <br>
 See commit history [here](https://github.com/damparo/SummerClassic/graphs/contributors).
 
 ## Planned Updates
-Future updates include updating the look of the site, allowing users to customize player cards, log ins, and able to save accounts outside of local storage.
+Future updates include updating the UI, allowing users to customize player cards, log ins, and move from local storage to MySQL database.
 
 
