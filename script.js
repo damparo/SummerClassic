@@ -10,6 +10,8 @@ var teamTwoList = document.querySelector("#teamtwo-list");
 var extraPlayer = document.querySelector("#freeagent");
 var lonePlayer = document.querySelector("#loneplayer");
 var playerCount = document.querySelector("#player-count");
+// script vars for players html
+
 
 var rosterField = [];
 
@@ -25,7 +27,6 @@ rosterForm.addEventListener("submit", function (e) {
 
   var nameRoster = rosterText.charAt(0).toUpperCase() + rosterText.slice(1);
 
-  // rosterText.toLowerCase();
   if (nameRoster === "") {
     return;
   }
@@ -44,12 +45,8 @@ rosterList.addEventListener("click", function (event) {
   }
 });
 
-
 //  its the data-index, hypo - when i delete one above, it doesn't update the roster and it deletes everything with it
 // I need a function that upates the data index each time a player is added, each time a player is deleted
-
-
-
 
 function manyPlayers() {
   rosterList.textContent = "";
@@ -70,9 +67,6 @@ function manyPlayers() {
   playerCount.textContent = rosterField.length;
 }
 
-
-
-
 function savedTeam() {
   var storedTeam = JSON.parse(localStorage.getItem("team"));
   if (storedTeam !== null) {
@@ -81,13 +75,10 @@ function savedTeam() {
   manyPlayers();
 }
 
-// var newTeam = [];
-
 randomBtn.addEventListener("click", function () {
   var freeAgent = [];
   var oneTeam = rosterField.concat(freeAgent);
-  // console.log(oneTeam);
-  
+
   function mix() {
     for (let i = oneTeam.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
@@ -99,52 +90,26 @@ randomBtn.addEventListener("click", function () {
   }
 
   mix();
-  
-
-
-
-
-
 
   teamOneList.textContent = "";
   teamTwoList.textContent = "";
   lonePlayer.textContent = "";
-  // console.log(oneTeam);
-  // console.log(oneTeam.length);
 
-
-if (oneTeam.length % 2 !== 0) {
-    // lonePlayer.textContent = "";
-    
-    // var freeAgent = [];
+  if (oneTeam.length % 2 !== 0) {
     var hmm = oneTeam.pop();
     freeAgent.push(hmm);
     lonePlayer.append(freeAgent);
-    // console.log(oneTeam);
-   
 
     var twoTeams = oneTeam.length * 0.5;
     var aTeam = oneTeam.slice(0, twoTeams);
-    // console.log(aTeam);
 
     var bTeam = oneTeam.slice(twoTeams);
-    // console.log(bTeam);
-
-
-    
-
   } else {
-    // lonePlayer.textContent = "";
     var twoTeams = oneTeam.length * 0.5;
     var aTeam = oneTeam.slice(0, twoTeams);
 
-    // console.log(aTeam);
-
     var bTeam = oneTeam.slice(twoTeams);
-    // console.log(bTeam);
-
   }
-//   lonePlayer.textContent = "";
 
   for (i = 0; i < aTeam.length; i++) {
     var playerBox = aTeam[i];
@@ -153,25 +118,17 @@ if (oneTeam.length % 2 !== 0) {
     teamOneList.append(newLi);
   }
 
-
   for (i = 0; i < bTeam.length; i++) {
     var playerBox = bTeam[i];
     var newLi = document.createElement("li");
     newLi.textContent = playerBox;
     teamTwoList.append(newLi);
   }
-
 });
 
+// --------------------------------------
 
 
-// function mix() {
-//   for (let i = rosterField.length - 1; i > 0; i--) {
-//     var j = Math.floor(Math.random() * (i + 1));
-//     var temp = rosterField[i];
-//     rosterField[i] = rosterField[j];
-//     rosterField[j] = temp;
-//   }
-//   return rosterField;
-// }
+
+
 

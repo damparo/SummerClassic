@@ -1,0 +1,16 @@
+body {
+  background-image: url("images/grass4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bothgroups {
+  margin-top: 20px;
+}
+
+#maintitle{
+    margin-top: 8vh;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+}
