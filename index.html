@@ -26,64 +26,52 @@
       <h4 id="title">Form Your Roster</h4>
 
       <div class="row">
-        <div class="col leftpool">
+        <div class="col">
           <h5 id="addplayer">Add Player</h5>
-          <div class="row">
-            <form id="roster-form" method="POST">
-              <input
-                type="text"
-                placeholder="Player Name"
-                name="roster-player"
-                id="roster-creation"
-              />
-            </form>
-          </div>
+          <form id="roster-form" method="POST">
+            <input
+              type="text"
+              placeholder="Player Name"
+              name="roster-player"
+              id="roster-creation"
+            />
+          </form>
 
           <h4 id="yourroster">Player Pool</h4>
-          <p id="textwhite"># of Players: <span id="player-count">0</span></p>
+          <p id="numplayers"># of Players: <span id="player-count">0</span></p>
 
           <ol id="roster-list"></ol>
-        </div>
 
-        <div class="col rightteams">
+          <button type="button" class="btn btn-danger col-12" id="randomteams">
+            Generate Teams
+          </button>
+
           <div class="row">
-            <button type="button" class="btn btn-danger" id="randomteams">
-              Generate Teams
-            </button>
-          </div>
-          <div class="row">
-            <div class="col">
+            <div class="col-6">
+              
               <h4 id="team1" class="zenter">Team 1</h4>
-
+    
               <ol id="teamone-list"></ol>
             </div>
-          </div>
-          <div class="row">
-            <div class="col">
+            <div class="col-6">
+
               <h4 id="team2" class="zenter">Team 2</h4>
-
+    
               <ol id="teamtwo-list"></ol>
+
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <h4 id="freeagent" class="zenter">Free Agent</h4>
 
-              <ol id="loneplayer"></ol>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <a href="players.html">
 
-                <button type="button" class="btn btn-primary" id="playerview">
-                  View Players
-                </button>
 
-              </a>
-             
-            </div>
-          </div>
+          <h4 id="freeagent" class="zenter">Free Agent</h4>
+
+          <ol id="loneplayer"></ol>
+          <a href="players.html">
+            <button type="button" class="btn btn-primary col-12" id="playerview">
+              View Players
+            </button>
+          </a>
         </div>
       </div>
     </div>
@@ -106,7 +94,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
-   
-    
   </body>
 </html>
