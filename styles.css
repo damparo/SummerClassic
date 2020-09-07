@@ -69,6 +69,11 @@ input[type="text"] {
 #randomteams {
     /* margin-left: 20px;
     margin-right: 20px; */
+    background-color: white;
+
+}
+#randomteams:hover {
+background-color: #d9534f;
 }
 .zenter {
   text-align: center;
@@ -103,7 +108,12 @@ ol {
 }
 #playerview{
     margin-bottom: 5em;
+    background-color: white;
 }
+#playerview:hover{
+background-color: #0275d8;
+}
+
 /* 
 #teamone-list {
   color: white;
