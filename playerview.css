@@ -16,10 +16,13 @@ body {
   font-family: "Pacifico", cursive;
   font-size: 4.5em;
   text-align: center;
+  
+  
 }
 
 #singlecard {
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .avatar{
@@ -38,4 +41,16 @@ body {
 .card-title {
   margin-top: 15px;
   margin-bottom: 20px;
+}
+
+.teambuttons{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.placeholder {
+  text-align: center;
+  height: 170px;
+  width: 250px;
+  padding-top: 20px;
 }
