@@ -118,12 +118,17 @@ randomBtn.addEventListener("click", function () {
     teamOneList.append(newLi);
   }
 
+  localStorage.setItem("aTeam", JSON.stringify(aTeam));
+
   for (i = 0; i < bTeam.length; i++) {
     var playerBox = bTeam[i];
     var newLi = document.createElement("li");
     newLi.textContent = playerBox;
     teamTwoList.append(newLi);
   }
+
+  localStorage.setItem("bTeam", JSON.stringify(bTeam));
+
 });
 
 // --------------------------------------
