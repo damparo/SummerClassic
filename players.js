@@ -23,7 +23,7 @@ function playerCard() {
   for (i = 0; i < rosterField.length; i++) {
     var playerCard = rosterField[i];
     var newCard = document.createElement("div");
-    newCard.className += "card";
+    newCard.className += "card playername";
     newCard.textContent = playerCard;
 
     newCard.setAttribute("data-index", i);
@@ -43,7 +43,7 @@ cardList.addEventListener("click", function (event) {
    
 
     var playerName = document.createElement("div");
-    playerName.className += "card";
+    playerName.className += "card avatar";
     singleCard.textContent = "";
 
     var userFontAwe = document.createElement("i");

@@ -1,7 +1,9 @@
 body {
-  background-image: url("images/grass4.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("images/grass4.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .bothgroups {
@@ -9,8 +11,26 @@ body {
 }
 
 #maintitle{
-    margin-top: 8vh;
-    color: white;
-    font-family: 'Pacifico', cursive;
-    font-size: 4em;
+  margin-top: 8vh;
+  color: white;
+  font-family: "Pacifico", cursive;
+  font-size: 4.5em;
+  text-align: center;
+}
+
+#singlecard {
+  margin-bottom: 15px;
+}
+
+.avatar{
+  height: 150px;
+  width: 250px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#cardlist {
+  width: 250px;
+  text-align: center;
+
 }
