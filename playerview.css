@@ -39,13 +39,14 @@ body {
 }
 
 .card-title {
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .teambuttons{
   margin-top: 20px;
   text-align: center;
+  /* background-color: white; */
 }
 
 .placeholder {
@@ -53,4 +54,9 @@ body {
   height: 170px;
   width: 250px;
   padding-top: 20px;
+}
+
+.vl{
+  border-left: 2px solid white;
+  height: 50px;
 }
