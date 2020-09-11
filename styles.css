@@ -1,10 +1,5 @@
 body {
-  /* background-color: #43BF21; */
-  /* background-image: url("images/grass4.jpg");
-  background-repeat: repeat; */
-    /* background-position:; */
-
-    background: url("images/grass4.jpg") no-repeat center center fixed; 
+  background: url("images/grass4.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -12,7 +7,7 @@ body {
 }
 
 #maintitle {
-  margin-top: 8vh;
+  margin-top: 6vh;
   color: white;
   font-family: "Pacifico", cursive;
   font-size: 4.5em;
@@ -37,11 +32,10 @@ body {
 }
 
 #roster-form {
-   text-align: center;
+  text-align: center;
 }
 input {
   border: none;
-  
 }
 input[type="text"] {
   background-color: white;
@@ -60,9 +54,9 @@ input[type="text"] {
 }
 
 #player-count {
-    color: white;
-  }
-  
+  color: white;
+}
+
 #roster-list {
   font-size: 25px;
   list-style: none;
@@ -72,22 +66,18 @@ input[type="text"] {
   text-align: center;
 }
 
-
 #whitebreak {
-    border: 10px solid white;
-    width: 100%;
-
-
+  border: 10px solid white;
+  width: 100%;
 }
 
 #randomteams {
-    /* margin-left: 20px;
+  /* margin-left: 20px;
     margin-right: 20px; */
-    background-color: white;
-
+  background-color: white;
 }
 #randomteams:hover {
-background-color: #d9534f;
+  background-color: #d9534f;
 }
 .zenter {
   text-align: center;
@@ -117,15 +107,14 @@ ol {
 }
 
 #loneplayer {
-      text-align: center;
-
+  text-align: center;
 }
-#playerview{
-    margin-bottom: 5em;
-    background-color: white;
+#playerview {
+  margin-bottom: 5em;
+  background-color: white;
 }
-#playerview:hover{
-background-color: #0275d8;
+#playerview:hover {
+  background-color: #0275d8;
 }
 
 /* 
@@ -135,4 +124,3 @@ background-color: #0275d8;
 #teamtwo-list {
   color: white;
 } */
-
