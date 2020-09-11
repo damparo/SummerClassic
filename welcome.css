@@ -22,12 +22,13 @@ body {
     /* height: 50%; */
 }
 .manager{
-    margin-top:3vh;
+    margin-top:2vh;
 }
 .start{
-    /* border: none; */
+    border: none;
+    margin-bottom: 4vh;
+    font-size: larger;
 }
 .begin{
     margin-top: 2vh;
-    margin-bottom: 4vh;
 }
