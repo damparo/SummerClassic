@@ -1,14 +1,19 @@
 body {
-  background: url("images/grass4.jpg") no-repeat center center fixed;
+  /* background: url("images/grass4.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
 }
-
+.navbar-custom .navbar-brand{
+  color: #5cb85c;
+}
+.container {
+  cursor: default;
+}
 #maintitle {
   margin-top: 6vh;
-  color: white;
+  color:#5cb85c;
   font-family: "Pacifico", cursive;
   font-size: 4.5em;
   text-align: center;
@@ -25,9 +30,11 @@ body {
     margin-top:2vh;
 }
 .start{
-    border: none;
+    margin-top: 1vh;
     margin-bottom: 4vh;
-    font-size: larger;
+    /* font-size: larger;
+    width: 8em;
+    height: 2em; */
 }
 .begin{
     margin-top: 2vh;
