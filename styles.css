@@ -5,9 +5,12 @@ body {
   -o-background-size: cover;
   background-size: cover; */
 }
-
+.border-bottom{
+  border-width: 10px;
+}
 .navbar-custom .navbar-brand{
   color: #5cb85c;
+ 
 }
 .container {
   cursor: default;
@@ -45,7 +48,8 @@ input {
   border: none;
 }
 input[type="text"] {
-  background-color: #5cb85c;
+  background-color: black;
+  color: white;
   /* width: 150px; */
 }
 
@@ -81,7 +85,7 @@ input[type="text"] {
 #randomteams {
   /* margin-left: 20px;
     margin-right: 20px; */
-  background-color: #5cb85c;
+  background-color: white;
 }
 #randomteams:hover {
   background-color: #d9534f;
@@ -118,7 +122,7 @@ ol {
 }
 #playerview {
   margin-bottom: 5em;
-  background-color: #5cb85c;
+  background-color: white;
 }
 #playerview:hover {
   background-color: #0275d8;
