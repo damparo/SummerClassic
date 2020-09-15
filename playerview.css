@@ -4,12 +4,15 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; */
+  background: black;
 }
 .navbar{
-  background-color: #f8b65a;
+  background-color: black;
+  border-bottom: 3px solid #d9534f;
 }
 .container {
   cursor: default;
+  background-color: black;
 }
 .bothgroups {
   margin-top: 20px;
@@ -22,6 +25,8 @@ body {
   font-family: "Pacifico", cursive;
   font-size: 4.5em;
   text-align: center;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
   
   
 }
@@ -54,6 +59,11 @@ body {
   text-align: center;
   margin-bottom: 40px;
   /* background-color: white; */
+}
+
+.teambtn{
+  background-color: white;
+  color: black;
 }
 
 .placeholder {

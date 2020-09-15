@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kickball Manager</title>
 
     <link
@@ -13,76 +13,96 @@
     />
 
     <link
-    href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-    rel="stylesheet"
-  />
-
-
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="welcome.css" />
-</head>
-<body>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-custom">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <nav class="navbar  sticky-top navbar-expand-lg navbar-dark navbar-custom">
-    
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <a class="navbar-brand" href="index.html">Roster</a>
-            <a class="navbar-brand" href="players.html">Players</a>
-            <a class="navbar-brand" href="welcome.html">Home</a>
-          </ul>
-          
-        </div>
-      </nav>
-      <div class="container d-flex flex-column justify-content-center align-items-center">
-         
-        <h1 id="maintitle">The Kickball Summer Classic</h1> 
-        <div class="container instructions d-flex flex-column justify-content-center  align-items-center">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <a class="navbar-brand" href="index.html">Roster</a>
+          <a class="navbar-brand" href="players.html">Players</a>
+          <a class="navbar-brand" href="welcome.html">Home</a>
+        </ul>
+      </div>
+    </nav>
+    <div
+      class="container d-flex flex-column justify-content-center align-items-center"
+    >
+      <h1 id="maintitle">The Kickball Summer Classic</h1>
 
-            <h3 class="text-success manager">Welcome Kickball Manager, </h3>
-            <p  class="text-success">using this app, you'll be able to set up and organize your teams.</p>
-            <p  class="text-success how">How it works:</p>
-            <ul  class="text-success">
-                <li>Add players to player pool</li>
-                <br>
-                <li>Generate teams (players randomly sorted)</li>
-                <br>
-                <li>View team player cards</li>
-                <br>
-                <li>Organize kicking order and outfield line up</li>
+      <div
+        class="container instructions d-flex flex-column justify-content-center align-items-center"
+      >
+        <h3 class="text-white manager">Welcome Kickball Manager,</h3>
+        <p class="text-white">
+          Here to help you set up and organize your teams.
+        </p>
+
+        <p>
+          <button
+            class="btn tips"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseExample"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            How it Works
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            <ul class="text-success">
+              <li>Add players to player pool</li>
+              <br />
+              <li>Generate teams (players randomly sorted)</li>
+              <br />
+              <li>View team player cards</li>
+              <br />
+              <li>Organize kicking order and outfield line up</li>
             </ul>
-    
-            
-            <h5 class="text-success begin">Lets get started,</h5>
-            <a href="index.html"><button type="button" class="btn btn-danger start">Create Teams</button></a>
-            
+          </div>
         </div>
+
+        <h5 class="text-white begin">Lets get started,</h5>
+        <a href="index.html"
+          ><button type="button" class="btn btn-danger start">
+            Create Teams
+          </button></a
+        >
+      </div>
     </div>
-    
-
-
-
-
 
     <script
-    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"
-  ></script>
-
-</body>
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -4,38 +4,65 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; */
+  background: black;
 }
 .navbar{
-  background-color: #f8b65a;
+  background-color: black;
+  border-bottom: 3px solid #d9534f;
 }
 .container {
   cursor: default;
+  background-color: black;
 }
 #maintitle {
   margin-top: 6vh;
-  color:#55ac55;
+  color: #55ac55;
   font-family: "Pacifico", cursive;
   font-size: 4.5em;
   text-align: center;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
 }
 
 .instructions {
     margin-top: 4vh;
-    background-color: white;
+    background-color: black;
     /* text-align: center; */
     width: 85%;
     /* height: 50%; */
+
 }
 .manager{
     margin-top:2vh;
 }
+
+.tips{
+  margin-top: 2vh;
+  border: 2px solid white;
+  background-color:#5cb85c;
+  color: white;
+
+}
+.tips:hover{
+  background-color:white;
+  color:#5cb85c;
+
+}
+
 .start{
     margin-top: 1vh;
     margin-bottom: 4vh;
+    border: 2px solid white
     /* font-size: larger;
     width: 8em;
     height: 2em; */
 }
+.start:hover{
+  background-color:white;
+  color:#d9534f;
+
+}
 .begin{
-    margin-top: 4vh;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
 }
