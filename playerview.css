@@ -5,8 +5,8 @@ body {
   -o-background-size: cover;
   background-size: cover; */
 }
-.navbar-custom .navbar-brand{
-  color: #5cb85c;
+.navbar{
+  background-color: #f8b65a;
 }
 .container {
   cursor: default;
@@ -18,7 +18,7 @@ body {
 
 #maintitle{
   margin-top: 6vh;
-  color: #5cb85c;
+  color: #55ac55;
   font-family: "Pacifico", cursive;
   font-size: 4.5em;
   text-align: center;

@@ -5,23 +5,15 @@ body {
   -o-background-size: cover;
   background-size: cover; */
 }
-.navbar-custom .navbar-brand{
-  color: white;
-}
-.navbar-dark{
-
-  color: white;
-  
-  /* border-bottom-color: black;
-  border-bottom-width: 2px;
-  border-bottom-style: solid; */
+.navbar{
+  background-color: #f8b65a;
 }
 .container {
   cursor: default;
 }
 #maintitle {
   margin-top: 6vh;
-  color:#5cb85c;
+  color:#55ac55;
   font-family: "Pacifico", cursive;
   font-size: 4.5em;
   text-align: center;
@@ -45,5 +37,5 @@ body {
     height: 2em; */
 }
 .begin{
-    margin-top: 2vh;
+    margin-top: 4vh;
 }
