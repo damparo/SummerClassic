@@ -18,18 +18,19 @@ body {
 .container {
   cursor: default;
   background-color: black;
-  margin-top: 12vh;
+  margin-top: 15vh;
 }
 
 
 #title {
-  margin-bottom: 25px;
-  border-bottom-color: #d9534f;
-  border-bottom-style: solid;
-  padding-bottom: 10px;
+
+  /* border-bottom-color: #d9534f;
+  border-bottom-style: solid; */
+  padding: 10px;
   color:white;
   font-size: 35px;
-  /* text-align: center; */
+  text-align: center;
+  border: 3px solid  #d9534f;
 }
 
 #addplayer {
@@ -69,6 +70,7 @@ input[type="text"] {
   color: white;
   font-weight: bolder;
   /* text-align: center; */
+  padding: 10px;
 }
 
 #whitebreak {
@@ -89,9 +91,11 @@ input[type="text"] {
   border: 2.5px solid #d9534f;
 }
 .zenter {
+  padding: 10px;
   text-align: center;
   color:white;
   /* font-size: 30px; */
+  border: 3px solid  #d9534f;
 }
 
 #team1 {
@@ -99,20 +103,23 @@ input[type="text"] {
 }
 
 #team2 {
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 #freeagent {
   /* margin-top: 10px; */
 }
 
 ol {
-  list-style: none;
+  list-style:none;
   font-size: larger;
   color:white;
   font-size: 25px;
   font-weight: bolder;
   /* text-align: center; */
-  /* padding-inline-start: 20px; */
+  padding-inline-start: 10px;
+  border: 3px solid  #d9534f;
+  text-align: center;
+  padding: 10px;
  
 }
 
@@ -140,5 +147,5 @@ ol {
   color: white;
 } */
 .borderres{
-  border: 3px solid  #d9534f;
+  /* border: 3px solid  #d9534f; */
 }
