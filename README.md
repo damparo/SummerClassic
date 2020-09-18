@@ -8,7 +8,7 @@ An application that lets a user manage and create team rosters and player cards 
 
 Application runs in browser, no installation or download needed.  Uses local storage for now to save player pool.
 
-Link to [project](https://damparo.github.io/SummerClassic/)
+Link to [project](https://damparo.github.io/SummerClassic/welcome.html)
 
 ## Built With
 
