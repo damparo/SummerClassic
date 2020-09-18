@@ -8,8 +8,6 @@ let rosterField = [];
 let teamOne = [];
 let teamTwo = [];
 
-
-
 showPlayersA();
 playerCardA();
 
@@ -34,9 +32,7 @@ cardList.addEventListener("click", function (event) {
   }
 });
 
-
-aTeam.addEventListener("click", function(){
-
+aTeam.addEventListener("click", function () {
   showPlayersA();
   playerCardA();
   cardList.addEventListener("click", function (event) {
@@ -45,26 +41,21 @@ aTeam.addEventListener("click", function(){
       let playerName = document.createElement("div");
       playerName.className += "card avatar";
       singleCard.textContent = "";
-  
+
       let userFontAwe = document.createElement("i");
       userFontAwe.className += "far fa-user";
       userFontAwe.style.fontSize = "5em";
       playerName.append(userFontAwe);
-  
+
       let nameTitle = document.createElement("h4");
       nameTitle.className += "card-title";
       nameTitle.textContent = element.innerHTML;
       playerName.append(nameTitle);
-  
+
       singleCard.append(playerName);
     }
   });
-
-
-
-
-
-})
+});
 
 function showPlayersA() {
   let storedTeamA = JSON.parse(localStorage.getItem("aTeam"));
@@ -72,7 +63,6 @@ function showPlayersA() {
     teamOne = storedTeamA;
   }
 }
-
 
 function playerCardA() {
   cardList.textContent = "";
@@ -89,8 +79,7 @@ function playerCardA() {
   }
 }
 
-
-bTeam.addEventListener("click", function(){
+bTeam.addEventListener("click", function () {
   cardList.textContent = "";
   showPlayersB();
   playerCardB();
@@ -101,26 +90,21 @@ bTeam.addEventListener("click", function(){
       let playerName = document.createElement("div");
       playerName.className += "card avatar";
       singleCard.textContent = "";
-  
+
       let userFontAwe = document.createElement("i");
       userFontAwe.className += "far fa-user";
       userFontAwe.style.fontSize = "5em";
       playerName.append(userFontAwe);
-  
+
       let nameTitle = document.createElement("h4");
       nameTitle.className += "card-title";
       nameTitle.textContent = element.innerHTML;
       playerName.append(nameTitle);
-  
+
       singleCard.append(playerName);
     }
   });
-
-
-
-
-
-})
+});
 
 function showPlayersB() {
   let storedTeamB = JSON.parse(localStorage.getItem("bTeam"));
@@ -128,7 +112,6 @@ function showPlayersB() {
     teamTwo = storedTeamB;
   }
 }
-
 
 function playerCardB() {
   cardList.textContent = "";

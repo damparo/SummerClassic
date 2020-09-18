@@ -1,0 +1,66 @@
+body {
+  /* background: url("images/grass4.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+  background: black;
+}
+
+.navbar {
+  background-color: black;
+  border-bottom: 3px solid #d9534f;
+}
+
+.container {
+  cursor: default;
+  background-color: black;
+  margin-top: 18vh;
+}
+
+
+.space {
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+}
+.select {
+  height: 80px;
+  /* border: 3px solid white; */
+}
+.col-2 {
+  /* border-left: 3px solid white;
+  border-right: 3px solid white; */
+  text-align: center;
+
+  
+}
+.col-5{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.digits, .teams {
+  height: 80px;
+  align-content: center;
+  text-align: center;
+  border: 3px solid white;
+}
+
+.rightborder {
+    border-right: 3px solid white;
+}
+input[type="radio"] {
+    -ms-transform: scale(1.8); /* IE 9 */
+    -webkit-transform: scale(1.8); /* Chrome, Safari, Opera */
+    transform: scale(1.8);
+}
+
+.btn-group-vertical{
+margin-top: 20px;
+}
+
+.plus {
+    /* border-bottom: 6px solid black; */
+    /* margin-top: 20px; */
+}

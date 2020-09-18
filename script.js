@@ -101,14 +101,14 @@ randomBtn.addEventListener("click", function () {
     lonePlayer.append(freeAgent);
 
     let twoTeams = oneTeam.length * 0.5;
-    let aTeam = oneTeam.slice(0, twoTeams);
+    aTeam = oneTeam.slice(0, twoTeams);
 
-    let bTeam = oneTeam.slice(twoTeams);
+    bTeam = oneTeam.slice(twoTeams);
   } else {
     let twoTeams = oneTeam.length * 0.5;
-    let aTeam = oneTeam.slice(0, twoTeams);
+    aTeam = oneTeam.slice(0, twoTeams);
 
-    let bTeam = oneTeam.slice(twoTeams);
+    bTeam = oneTeam.slice(twoTeams);
   }
 
   for (i = 0; i < aTeam.length; i++) {

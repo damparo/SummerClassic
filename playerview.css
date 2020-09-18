@@ -13,6 +13,7 @@ body {
 .container {
   cursor: default;
   background-color: black;
+  margin-top: 12vh;
 }
 .bothgroups {
   margin-top: 20px;
@@ -76,4 +77,47 @@ body {
 .vl{
   border-left: 2px solid #5cb85c;
   height: 50px;
+}
+
+/* -------------------------------- */
+
+.empty{
+  display: inline-block;
+  height: 80px;
+  width: 100%;
+  margin: 10px;
+  border: 3px salmon solid;
+  background-color: white;
+  /* border-radius: 25%; */
+}
+
+.centerout{
+  justify-content: center;
+}
+
+.outfield{
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.shortsecond {
+justify-content: center;
+margin-top: 50px;
+}
+
+/* .shortstop{
+  margin-right: 100px;
+}
+
+.second{
+  margin-right: 280px;
+} */
+
+.pitcher{
+  margin-top: 50px;
+  justify-content: space-between;
+}
+.home{
+  margin-top: 50px;
+  justify-content: center;
 }
