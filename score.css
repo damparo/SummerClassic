@@ -41,14 +41,22 @@ body {
 
 
 .digits, .teams {
-  height: 80px;
+  /* height: 80px; */
   align-content: center;
   text-align: center;
   border: 3px solid white;
 }
-
+h3 {
+    padding: 10px;
+}
+.font{
+    font-family: 'Graduate', cursive;
+    font-size: 100px;
+    color: #f0ad4e;
+}
 .rightborder {
     border-right: 3px solid white;
+    
 }
 input[type="radio"] {
     -ms-transform: scale(1.8); /* IE 9 */
