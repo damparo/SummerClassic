@@ -23,16 +23,21 @@ let secondCounter = 0;
 
 function checkTeam1() {
 
-if (leftTeam.checked = true) {
+// if (leftTeam.checked === true) {
 
 
   plus.addEventListener("click", function (e) {
+
+    if (leftTeam.checked === true){
+
+
+    
     counter += 1;
     leftNum.textContent = counter;
     if (counter === 0) {
       leftNum.textContent = 0;
     }
-  
+    }
     // localStorage.setItem("scoreL", countL);
   });
   
@@ -47,7 +52,7 @@ if (leftTeam.checked = true) {
   
     // localStorage.setItem("scoreL", countL);
   });
-  }
+  
 
 }
   
@@ -55,7 +60,9 @@ if (leftTeam.checked = true) {
 function checkTeam2() {
   console.log("yes?");
 
+  
   plus.addEventListener("click", function () {
+    if (rightTeam.checked === true) {
    
     secondCounter++;
     rightNum.textContent = secondCounter;
@@ -63,6 +70,7 @@ function checkTeam2() {
       rightNum.textContent = 0;
     }
     // localStorage.setItem("scoreR", countR);
+  }
   });
 
   minus.addEventListener("click", function () {
@@ -77,3 +85,4 @@ function checkTeam2() {
     // localStorage.setItem("scoreL", countL);
   });
 }
+// }
