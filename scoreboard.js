@@ -21,27 +21,31 @@ let secondCounter = 0;
 
 
 
-function checkTeam1() {
+// function checkTeam1() {
 
-// if (leftTeam.checked === true) {
+  
+  
 
 
   plus.addEventListener("click", function (e) {
-
     if (leftTeam.checked === true){
 
-
     
-    counter += 1;
-    leftNum.textContent = counter;
-    if (counter === 0) {
-      leftNum.textContent = 0;
-    }
+
+      counter ++;
+      leftNum.textContent = counter;
+      if (counter === 0) {
+        leftNum.textContent = 0;
+      }
+    
+
     }
     // localStorage.setItem("scoreL", countL);
   });
   
   minus.addEventListener("click", function () {
+
+    if (leftTeam.checked === true){
     counter--;
     leftNum.textContent = counter;
   
@@ -51,14 +55,15 @@ function checkTeam1() {
     }
   
     // localStorage.setItem("scoreL", countL);
+  };
   });
   
 
-}
+
   
 
-function checkTeam2() {
-  console.log("yes?");
+
+  // console.log("yes?");
 
   
   plus.addEventListener("click", function () {
@@ -74,6 +79,9 @@ function checkTeam2() {
   });
 
   minus.addEventListener("click", function () {
+
+    if (rightTeam.checked === true) {
+
     secondCounter--;
     rightNum.textContent = secondCounter;
 
@@ -83,6 +91,8 @@ function checkTeam2() {
     }
     // leftNum.textContent = countL;
     // localStorage.setItem("scoreL", countL);
+  };
   });
-}
+  
+// }
 // }
