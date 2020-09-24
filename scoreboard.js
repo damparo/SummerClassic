@@ -4,28 +4,30 @@ const leftNum = document.querySelector(".leftnumber");
 const rightNum = document.querySelector(".rightnumber");
 const plus = document.querySelector(".plus");
 const minus = document.querySelector(".minus");
-// const add = document.querySelector(".add");
-// const subtract = document.querySelector(".subtract");
-const points = document.querySelector(".points");
 
-// let countL = localStorage.getItem("scoreL");
-// let  countR = localStorage.getItem("scoreR");
+const points = document.querySelector(".points");
+const clear = document.querySelector(".clear");
+
+let countL = localStorage.getItem("scoreL");
+let  countR = localStorage.getItem("scoreR");
 let counter = 0;
 let secondCounter = 0;
 
-// const radioBtns = document.querySelector("input[name=winning]");
-
-
-// checkTeam1();
 
 
 
-
-// function checkTeam1() {
+  // if (sessionStorage.getItem("scoreL"));
+  let storedScore = JSON.parse(countL);
+  if (storedScore !== null) {
+    counter = storedScore;
+    leftNum.textContent = storedScore;
+  }
 
   
-  
 
+
+
+// savedTeam();
 
   plus.addEventListener("click", function (e) {
     if (leftTeam.checked === true){
@@ -37,11 +39,14 @@ let secondCounter = 0;
       if (counter === 0) {
         leftNum.textContent = 0;
       }
-    
+      // localStorage.setItem("scoreL", counter);
+     localStorage.setItem("scoreL", counter);
 
     }
-    // localStorage.setItem("scoreL", countL);
+    
   });
+  
+  
   
   minus.addEventListener("click", function () {
 
@@ -54,16 +59,17 @@ let secondCounter = 0;
       leftNum.textContent = 0;
     }
   
-    // localStorage.setItem("scoreL", countL);
+    localStorage.setItem("scoreL", counter);
   };
   });
   
 
 
-  
-
-
-  // console.log("yes?");
+  let storedScore2 = JSON.parse(countR);
+  if (storedScore2 !== null) {
+    secondCounter = storedScore2;
+    rightNum.textContent = storedScore2;
+  }
 
   
   plus.addEventListener("click", function () {
@@ -74,7 +80,7 @@ let secondCounter = 0;
     if (secondCounter === 0) {
       rightNum.textContent = 0;
     }
-    // localStorage.setItem("scoreR", countR);
+    localStorage.setItem("scoreR", secondCounter);
   }
   });
 
@@ -90,9 +96,22 @@ let secondCounter = 0;
       rightNum.textContent = 0;
     }
     // leftNum.textContent = countL;
-    // localStorage.setItem("scoreL", countL);
+    localStorage.setItem("scoreR", secondCounter);
   };
   });
   
 // }
 // }
+clear.addEventListener("click", function(){
+
+  rightNum.textContent = 0;
+  leftNum.textContent = 0;
+
+  counter = 0;
+  secondCounter = 0;
+
+  storedScore = 0;
+  storedScore2 = 0;
+
+
+})
