@@ -4,7 +4,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; */
-  background:white;
+  background: white;
 }
 
 .navbar {
@@ -18,7 +18,6 @@ body {
   margin-top: 18vh;
 }
 
-
 .space {
   margin-left: 1.5vw;
   margin-right: 1.5vw;
@@ -31,16 +30,16 @@ body {
   /* border-left: 3px solid white;
   border-right: 3px solid white; */
   text-align: center;
-
-  
+  padding-left: 0px;
+  padding-right: 0px;
 }
-.col-5{
-    text-align: center;
-    margin-top: 20px;
+.col-5 {
+  text-align: center;
+  margin-top: 20px;
 }
 
-
-.digits, .teams {
+.digits,
+.teams {
   /* height: 80px; */
   align-content: center;
   text-align: center;
@@ -54,33 +53,30 @@ body {
   background-color: black;
 }
 h3 {
-    padding: 10px;
+  padding: 10px;
 }
-.font{
-    font-family: 'Graduate', cursive;
-    font-size: 100px;
-    color: #f0ad4e;
+.font {
+  font-family: "Graduate", cursive;
+  font-size: 100px;
+  color: #f0ad4e;
 }
 .rightborder {
-    border-right: 3px solid white;
-    
+  border-right: 3px solid white;
 }
 .rightborderteam {
   border-right: 3px solid black;
-  
 }
 input[type="radio"] {
-    -ms-transform: scale(1.8); /* IE 9 */
-    -webkit-transform: scale(1.8); /* Chrome, Safari, Opera */
-    transform: scale(1.8);
+  -ms-transform: scale(1.8); /* IE 9 */
+  -webkit-transform: scale(1.8); /* Chrome, Safari, Opera */
+  transform: scale(1.8);
 }
 
-.btn-group-vertical{
-margin-top: 20px;
+.btn-group-vertical {
+  margin-top: 20px;
 }
 
-.clear{
+.clear {
   margin-top: 50px;
   /* font-size: small; */
-
 }
