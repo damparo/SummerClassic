@@ -2,7 +2,7 @@
 
 ## Description
 
-An application that lets a user manage and create team rosters and player cards for games of kickball.
+An application that lets a user manage and create team rosters and keep track of score.
 
 ## Getting Started
 
