@@ -141,7 +141,7 @@ clear.addEventListener("click", function () {
   teamOneList.textContent = "";
   teamTwoList.textContent = "";
   lonePlayer.textContent = "";
-  localStorage.clear();
+  // localStorage.clear();
   // aTeam.textContent = "";
   // bTeam.textContent = "";
 });

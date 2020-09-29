@@ -103,15 +103,18 @@ let secondCounter = 0;
 // }
 // }
 clear.addEventListener("click", function(){
-
-  rightNum.textContent = 0;
-  leftNum.textContent = 0;
-
+  
+  
   counter = 0;
   secondCounter = 0;
-
+  
   storedScore = 0;
   storedScore2 = 0;
-
+  
+  localStorage.clear();
+  
+  
+  rightNum.textContent = 0;
+  leftNum.textContent = 0;
 
 })
