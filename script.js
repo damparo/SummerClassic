@@ -10,8 +10,9 @@ const teamTwoList = document.querySelector("#teamtwo-list");
 const extraPlayer = document.querySelector("#freeagent");
 const lonePlayer = document.querySelector("#loneplayer");
 const playerCount = document.querySelector("#player-count");
-// script vars for players html
+const clear = document.querySelector(".clear");
 
+// script vars for players html
 
 let rosterField = [];
 
@@ -25,7 +26,7 @@ rosterForm.addEventListener("submit", function (e) {
   rosterText.charAt(0).toUpperCase();
   rosterText.slice(1);
 
-  let nameRoster = rosterText.charAt(0).toUpperCase() + rosterText.slice(1);
+   nameRoster = rosterText.charAt(0).toUpperCase() + rosterText.slice(1);
 
   if (nameRoster === "") {
     return;
@@ -128,12 +129,19 @@ randomBtn.addEventListener("click", function () {
   }
 
   localStorage.setItem("bTeam", JSON.stringify(bTeam));
-
 });
 
 // --------------------------------------
-
-
-
-
-
+clear.addEventListener("click", function () {
+  // nameRoster.textContent === "";
+  // lonePlayer.textContent === "";
+  rosterField = [];
+  rosterList.textContent = "";
+  playerCount.textContent = "";
+  teamOneList.textContent = "";
+  teamTwoList.textContent = "";
+  lonePlayer.textContent = "";
+  localStorage.clear();
+  // aTeam.textContent = "";
+  // bTeam.textContent = "";
+});
